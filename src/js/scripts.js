@@ -1,6 +1,5 @@
 function init() {
-    console.log('Page loaded');
-    // Example of adding a click event listener to the navigation links
+    //console.log('Page loaded');
     const sectionActive = document.querySelectorAll('#navbar > li > span');
     const main = document.querySelector('main'); 
     
