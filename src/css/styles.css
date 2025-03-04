@@ -30,23 +30,27 @@ nav ul li a,
 nav ul li span {
     color: #fff;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 main {
     padding: 2rem;
-    min-height: 300px;
-    outline: 1px solid #ccc;
+}
+main.about #about {
+    display: block;
+}
+main.projects #projects {
+    display: block;
+}
+main.contact #contact {
+    display: block;
 }
 
 section {
     margin-bottom: 2rem;
     display: none;
-}
-
-section:nth-of-type(1) {
-    display: block;
-}
-
+    min-height: 400px;
+} 
 
 .project {
     background: #f4f4f4;
@@ -59,7 +63,9 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
+    /*
     position: fixed;
     width: 100%;
     bottom: 0;
+    */
 }
