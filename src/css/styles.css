@@ -26,18 +26,27 @@ nav ul li {
     margin: 0 1rem;
 }
 
-nav ul li a {
+nav ul li a,
+nav ul li span {
     color: #fff;
     text-decoration: none;
 }
 
 main {
     padding: 2rem;
+    min-height: 300px;
+    outline: 1px solid #ccc;
 }
 
 section {
     margin-bottom: 2rem;
+    display: none;
 }
+
+section:nth-of-type(1) {
+    display: block;
+}
+
 
 .project {
     background: #f4f4f4;

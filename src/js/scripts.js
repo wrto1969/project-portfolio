@@ -13,3 +13,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+/*Adding an onclick event to a button
+//const myButton = document.getElementById('myButton');
+myButton.addEventListener('click', function() {
+    let navID = myButton.getAttribute('data-nav-id');
+    alert('Button clicked!'+ navID);
+});*/
+const element = document.getElementById('navbar');
+const myButton = document.querySelectorAll('#navbar > li > span');
+
+const main = document.getSelection('main');
+
+myButton.forEach(button => {
+    button.addEventListener('click', function() {
+        let navID = button.getAttribute('data-nav-id');
+        alert('Button clicked!'+ navID);
+    });
+});
