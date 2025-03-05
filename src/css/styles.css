@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    color: #333;
 }
 
 header {
@@ -11,22 +12,27 @@ header {
     padding: 1rem 0;
     text-align: center;
 }
+a {
+    color: #333;
+    white-space: nowrap;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
 
 header h1 {
     margin: 0;
 }
-
+/* navigation */
 nav ul {
     list-style: none;
     padding: 0;
 }
-
 nav ul li {
     display: inline;
     margin: 0 1rem;
 }
-
-nav ul li a,
 nav ul li span {
     color: #fff;
     text-decoration: none;
@@ -36,20 +42,20 @@ nav ul li span {
 main {
     padding: 2rem;
 }
-main.about #about {
-    display: block;
-}
-main.projects #projects {
-    display: block;
-}
+/* show section area */
+main.about #about,
+main.projects #projects,
 main.contact #contact {
     display: block;
 }
-
+/* section area */
 section {
     margin-bottom: 2rem;
     display: none;
     min-height: 400px;
+} 
+section h3{
+    color: #000;
 } 
 
 .project {
@@ -57,6 +63,16 @@ section {
     padding: 1rem;
     margin-bottom: 1rem;
 }
+/* form */
+section form label {
+    font-weight: 700;
+    vertical-align: top;
+}
+section form div {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
 
 footer {
     background: #333;
