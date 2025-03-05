@@ -48,6 +48,9 @@ main.projects #projects,
 main.contact #contact {
     display: block;
 }
+#officeEnvironment {
+    width: 100%;
+}
 /* section area */
 section {
     margin-bottom: 2rem;
